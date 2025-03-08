@@ -64,7 +64,7 @@ x_values = np.arange(len(data.columns)) * x_spacing  # 根据 x_spacing 调整 X
 
 # 电极 A
 ax_a.plot(x_values, diff_a, marker="o", markersize=4, linewidth=1.5)
-ax_a.set_title(f"（ {electrode_a}）", fontsize=10)
+ax_a.set_title(f"{electrode_a}", fontsize=10)
 ax_a.set_xlabel("", fontsize=8)
 ax_a.set_ylabel("")  # 隐藏 Y 轴标签
 ax_a.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))  # Y 轴保留两位小数
@@ -74,7 +74,7 @@ ax_a.grid(True, linestyle="--", alpha=0.6)
 
 # 电极 B
 ax_b.plot(x_values, diff_b, marker="o", markersize=4, linewidth=1.5)
-ax_b.set_title(f"（ {electrode_b}）", fontsize=10)
+ax_b.set_title(f"{electrode_b}", fontsize=10)
 ax_b.set_xlabel("", fontsize=8)
 ax_b.set_ylabel("")  # 隐藏 Y 轴标签
 ax_b.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))  # Y 轴保留两位小数
@@ -84,7 +84,7 @@ ax_b.grid(True, linestyle="--", alpha=0.6)
 
 # 电极 A-B
 ax_ab.plot(x_values, diff_ab, marker="o", markersize=4, linewidth=1.5)
-ax_ab.set_title(f"（ {electrode_a} -  {electrode_b}）", fontsize=10)
+ax_ab.set_title(f"{electrode_a} -  {electrode_b}", fontsize=10)
 ax_ab.set_xlabel("", fontsize=8)
 ax_ab.set_ylabel("")  # 隐藏 Y 轴标签
 ax_ab.yaxis.set_major_formatter(FormatStrFormatter('%.2f'))  # Y 轴保留两位小数
